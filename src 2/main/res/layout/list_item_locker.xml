@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text = "Name Locker"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    android:id="@+id/name_item"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo_item"
+            android:src="@drawable/ic_launcher"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView3"
+                            android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Tel Aviv, Arlozorov st. 53"
+                            android:id="@+id/adress_item"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView4"
+                            android:src="@drawable/abc_ic_menu_cut_mtrl_alpha"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="distance 5.3 km"
+                            android:id="@+id/distance_item"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nextimg"
+                    android:src="@drawable/locker"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Count locker"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/yellow_bg_color"
+                    android:layout_margin="3dp"
+
+                    android:minWidth="250dp"
+
+
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/leftTopButtonsContainer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/yellow_bg_color"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        >
+                        <com.rey.material.widget.FloatingActionButton
+                            android:id="@+id/amountBtMinus1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:fab_radius="15dp"
+                           android:background="@drawable/ic_minus_white_24dp"
+                           />
+                       <!-- <ImageButton
+                            android:id="@+id/amountBtMinus1"
+                            android:layout_width="44dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/black_button_selector"
+                            android:src="@drawable/minus_sign" />-->
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal" >
+
+                            <TextView
+                                android:id="@+id/amountView1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:singleLine="true"
+                                android:textColor="#0c0c0c"
+                                android:textSize="25sp"
+                                android:maxLength="10"
+                                android:textStyle="bold"
+                                android:text = "0"
+                                android:layout_gravity="center"
+                                >
+
+                                <requestFocus />
+                            </TextView>
+                        </LinearLayout>
+                        <com.rey.material.widget.FloatingActionButton
+                            android:id="@+id/black_button_selector"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fab_radius="15dp"
+                            android:background="@drawable/ic_plus_white_24dp"/>
+                       <!-- <ImageButton
+                            android:id="@+id/amountBtPlus1"
+                            android:layout_width="44dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/black_button_selector"
+                            android:src="@drawable/plus_sign" />-->
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3color">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center|left">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/dry_wash"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="top|center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Dry Wash"
+                    android:id="@+id/title_iron"
+                    android:layout_gravity="center"/>
+
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Count"
+                android:id="@+id/textView23"
+                android:layout_marginRight="35dp"
+                android:layout_gravity="right"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="30dp"
+                android:id="@+id/count_layout_iron">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/yellow_bg_color"
+
+                    android:layout_margin="3dp"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Short"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                    <LinearLayout
+                        android:id="@+id/leftTopButtonsContainer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/yellow_bg_color"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        >
+
+                        <com.rey.material.widget.FloatingActionButton
+                            android:id="@+id/amountBtMinus1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:fab_radius="15dp"
+                            android:background="@drawable/ic_minus_white_24dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal" >
+
+                            <TextView
+                                android:id="@+id/amountView1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:singleLine="true"
+                                android:textColor="#0c0c0c"
+                                android:textSize="25sp"
+                                android:maxLength="10"
+                                android:textStyle="bold"
+                                android:text = "0"
+                                android:layout_gravity="center"
+                                >
+
+                                <requestFocus />
+                            </TextView>
+                        </LinearLayout>
+
+                        <com.rey.material.widget.FloatingActionButton
+                            android:id="@+id/amountBtPlus1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fab_radius="15dp"
+                            android:background="@drawable/ic_plus_white_24dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/yellow_bg_color"
+                    android:layout_margin="3dp"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Short"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                    <LinearLayout
+                        android:id="@+id/leftTopButtonsContainer1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/yellow_bg_color"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        >
+
+                        <com.rey.material.widget.FloatingActionButton
+                            android:id="@+id/amountBtMinus2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:fab_radius="15dp"
+                            android:background="@drawable/ic_minus_white_24dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal" >
+
+                            <TextView
+                                android:id="@+id/amountView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:singleLine="true"
+                                android:textColor="#0c0c0c"
+                                android:textSize="25sp"
+                                android:maxLength="10"
+                                android:textStyle="bold"
+                                android:text = "0"
+                                android:layout_gravity="center">
+
+                                <requestFocus />
+                            </TextView>
+                        </LinearLayout>
+
+                        <com.rey.material.widget.FloatingActionButton
+                            android:id="@+id/amountBtPlus2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fab_radius="15dp"
+                            android:background="@drawable/ic_plus_white_24dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/comments_layout"
+
+                android:orientation="vertical"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Comments"
+                    android:id="@+id/comets_text_iron"
+                    android:layout_marginRight="35dp"
+                    android:layout_gravity="right"/>
+
+                <include layout="@layout/coments" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

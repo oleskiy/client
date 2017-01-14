@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="@drawable/tlv_back">
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#00000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/profile_layout"
+            >
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_language"
+                android:layout_gravity="right"
+                android:gravity="right"
+
+                android:popupBackground="#FFFFFF"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical" >
+               <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_first_name_il"
+                    android:background="#80FFFFFF"
+                    android:layout_marginTop="10dp">
+
+                    <include layout="@layout/first_name_il"/>
+                </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal"
+
+                    android:background="#80FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ll_first_name">
+
+
+                        </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#80FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ll_last_name"
+                    android:orientation="horizontal">
+
+                 <!--  <include layout="@layout/last_name"/>-->
+                </LinearLayout>
+               <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#80FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ll_last_name_il">
+
+                    <include layout="@layout/last_name_il"/>
+                </LinearLayout>-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#80FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ll_mail"
+                    android:orientation="horizontal">
+
+                  <!-- <include layout="@layout/mail"/>-->
+                </LinearLayout>
+
+               <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#80FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/ll_mail_il">
+
+                    <include layout="@layout/mail_il"/>
+                </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#80FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_phone">
+
+                    <!--<include layout="@layout/phone_number"/>-->
+
+
+
+
+                </LinearLayout>
+              <!--  <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#80FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_phone_il">
+
+                    <include layout="@layout/phone_number_il"/>
+
+
+
+
+                </LinearLayout>-->
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/userIDnumLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#00000000"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp" >
+
+                    <EditText
+                        android:id="@+id/userIDnumEditBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:ems="10"
+                        android:hint="ID Number"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberSigned"
+                        android:lines="1"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            ///////////////////////////
+            <LinearLayout
+                android:id="@+id/userInvitationCodeLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#00000000"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp" >
+
+                    <EditText
+                        android:id="@+id/userInvitationCodeEditBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="Invitation Code"
+                        android:imeOptions="actionNext"
+                        android:lines="1"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            ////////////////
+
+
+
+
+            <TextView
+                android:id="@+id/explanationStringView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:shadowColor="@color/TEXT_TITLES_SHADOW_COLOR"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="@color/TEXT_TITLES_COLOR"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/check_box_newsletter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:checked="false"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/text_view_newsletter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/TEXT_TITLES_COLOR"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/check_box_confirm_policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:checked="false"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/text_view_confirm_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/card_info"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/hand_credit_card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="Please enter credit card"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="42"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:layout_gravity="center"/>
+                <com.rey.material.widget.ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/save_credit_card_hand"
+                    android:layout_gravity="center"
+                    android:id="@+id/hand_credit_card_icon"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/credit_card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="Credit card number"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="42"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:layout_gravity="center"/>
+                <com.rey.material.widget.ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/scan_credit_icon"
+                    android:layout_gravity="center"
+                    android:id="@+id/credit_scan"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/credit_card_privacy"
+                android:text="CreditCard privacy"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <!--<com.rey.material.widget.Button
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/btn_profile"
+                android:layout_gravity="center|bottom"
+                android:gravity="bottom"
+                android:layout_marginTop="50dp"
+
+                android:background="@drawable/button_next"
+
+                />-->
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

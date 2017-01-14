@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="weartest.com.client"
+    android:versionCode="1"
+    android:versionName="1"
+
+    android:installLocation="preferExternal">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22" />
+
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <permission android:name="weartest.com.client.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="weartest.com.client.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Permission to vibrate - recommended, allows vibration feedback on scan -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Permission to use camera - required -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".UILApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo_small"
+        android:label="@string/name"
+        android:supportsRtl = "true"
+
+        android:theme="@style/Theme.AppTheme"
+        android:screenOrientation="portrait"
+       >
+        <activity android:name="weartest.com.client.SplashActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Order"
+
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".SimpleScannerActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="weartest.com.client.MainActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".Deliver"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".Timer"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".WebViewActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name="io.card.payment.CardIOActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+        <receiver android:name="com.microsoft.windowsazure.notifications.NotificationsBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+
+        </receiver>
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <uses-feature android:name="android.hardware.camera" android:required="false" />
+        <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+        <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+
+        <receiver
+            android:name="widgetdemo.MyWidgetIntentReceiver"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.javatechig.intent.action.UPDATE_WIDGET" />
+            </intent-filter>
+            <receiver android:process=":remote" android:name=".Alarm"></receiver>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/demo_widget_provider" />
+        </receiver>
+
+        <receiver android:name="widgetdemo.MyWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <service
+                android:name="weartest.com.client.timer.AlarmService"
+                android:enabled="true" />
+            <receiver android:name="weartest.com.client.timer.AlarmReceiver" />
+           
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/demo_widget_provider" />
+        </receiver>
+    </application>
+    <uses-feature android:name="android.hardware.location.gps" />
+</manifest>

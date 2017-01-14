@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:layout_weight="3"
+        android:background="@drawable/tlv_back">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="We've sent an SMS with an activation code to your phone "
+            android:id="@+id/info_login2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="60dp"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Plese, enter code"
+            android:id="@+id/please_code"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:textColor="#FFFFFF"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:hint="Code"
+            android:id="@+id/phone2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_marginBottom="50dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textStyle="bold"
+            android:background="#80FFFFFF"
+            android:padding="15dp"
+            />
+
+
+
+
+
+
+        <com.rey.material.widget.Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/next_login2"
+            android:layout_gravity="center|bottom"
+            android:gravity="bottom"
+            android:layout_marginTop="50dp"
+
+            android:background="@drawable/button_next"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wrong number?"
+            android:id="@+id/wrong_number"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="50dp"/>
+    </LinearLayout>
+
+</LinearLayout>

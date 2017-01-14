@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:gravity="bottom"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/counter"
+            android:text="Counter"
+            android:gravity="bottom|left"
+            android:foregroundGravity="bottom"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        >
+
+        <!--Wash-->
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#4D9CD0"
+    android:layout_weight="3"
+            android:id="@+id/wash_layout">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wash"
+            android:layout_weight="3"
+            android:padding="3dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Wash"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:layout_marginLeft="25sp"
+            android:textSize="25sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/wash_count"
+            android:layout_weight="3"
+            android:id="@+id/counter_wash"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#00000000"
+        android:layout_weight="1"
+        android:id="@+id/wash_radiobuttongroupe"
+        android:visibility="gone">
+
+        <com.rey.material.widget.RadioButton
+            style="@style/RadioButtonDrawable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Notes"
+            android:layout_gravity="left"
+            android:checked="false"
+            android:id="@+id/wash_notes"/>
+        <com.rey.material.widget.RadioButton
+            style="@style/RadioButtonDrawable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="More Conditioner"
+            android:layout_gravity="left"
+            android:checked="false"
+            android:id="@+id/wash_conditioner"/>
+        <com.rey.material.widget.RadioButton
+            style="@style/RadioButtonDrawable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:text="הרבה בתמים"
+            android:layout_gravity="left"
+            android:checked="false"
+            android:id="@+id/wash_many"/>
+    </RadioGroup>
+<!--Iron-->
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#4975AA"
+            android:layout_weight="3"
+            android:id="@+id/iron_layout">
+
+
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1">
+
+                   <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/iron"
+                    android:layout_weight="3"
+                       android:padding="3dp"
+                       />
+
+                   <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Iron"
+                    android:layout_weight="1"
+                       android:gravity="center|left"
+                       android:layout_marginLeft="25sp"
+                       android:textSize="25sp"/>
+
+
+                   <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/iron_count1"
+                   android:layout_weight="3"
+                       android:id="@+id/counter_iron1"
+                       android:visibility="invisible"
+                   />
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:background="@drawable/iron_counter2"
+                       android:layout_weight="3"
+                       android:id="@+id/counter_iron2"
+                       android:visibility="invisible"
+                       />
+               </LinearLayout>
+
+               <RadioGroup
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:background="#00000000"
+                   android:layout_weight="1"
+                   android:id="@+id/iron_radiobuttongroupe"
+                   android:visibility="gone">
+
+                   <com.rey.material.widget.RadioButton
+                       style="@style/RadioButtonDrawable"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="left"
+                       android:text="Notes"
+                       android:layout_gravity="left"
+                       android:checked="false"
+                       android:id="@+id/iron_notes"/>
+                   <com.rey.material.widget.RadioButton
+                       android:checked="false"
+                       style="@style/RadioButtonDrawable"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="center_horizontal"
+                       android:layout_weight="1"
+                       android:text="Ironing"
+                       android:layout_gravity="left"
+                       android:id="@+id/iron_ironing"
+                       />
+                   <com.rey.material.widget.RadioButton
+
+                       style="@style/RadioButtonDrawable"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:gravity="right"
+                       android:layout_weight="1"
+                       android:layout_gravity="left"
+                       android:text="Wash and Ironing"
+                       android:checked="false"
+                       android:id="@+id/iron_wash_iron"/>
+               </RadioGroup>
+
+
+        </LinearLayout>
+<!--dry Wash-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#5B538A"
+            android:layout_weight="3"
+            android:id="@+id/dry_wash_layout">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dry_wash"
+                    android:layout_weight="3"
+                    android:padding="3dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Dry Wash"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="25sp"
+                    android:textSize="25sp"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="3"
+                    android:id="@+id/spiner_dry_wash"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="#00000000"
+                android:layout_weight="1"
+                android:id="@+id/dry_wash_radiobuttongroupe"
+                android:visibility="gone"
+                >
+
+
+                <com.rey.material.widget.RadioButton
+                    style="@style/RadioButtonDrawable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:text="Notes/countunt"
+                    android:layout_gravity="left"
+                    android:id="@+id/dry_clening"/>
+                <com.rey.material.widget.RadioButton
+                    style="@style/RadioButtonDrawable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Dry Cleaning"
+                    android:checked="false"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:id="@+id/dry_notes"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:background="#58426C">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choese time return wash"
+           />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:background="#00000000">
+
+            <com.rey.material.widget.RadioButton
+                style="@style/RadioButtonDrawable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="11:00"
+                android:id="@+id/time_11"/>
+            <com.rey.material.widget.RadioButton
+                style="@style/RadioButtonDrawable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:checked="false"
+                android:layout_weight="1"
+                android:text="17:00"
+                android:id="@+id/time_17"/>
+            <com.rey.material.widget.RadioButton
+                style="@style/RadioButtonDrawable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:checked="false"
+                android:layout_weight="1"
+                android:text="21:00"
+                android:id="@+id/time_21"/>
+
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Invoice"
+            android:background="@drawable/background3color"/>
+    </LinearLayout>
+  </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

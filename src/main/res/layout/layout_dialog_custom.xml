@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layoutDirection="ltr">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_margin="3dp"
+        >
+       <!-- <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Count lockers"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:gravity="center"/>-->
+        <LinearLayout
+            android:id="@+id/leftTopButtonsContainer1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            >
+
+            <com.rey.material.widget.Button
+                android:id="@+id/amountBtMinusDialog"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:background="@drawable/button1_minus"
+
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/amountViewdialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center_vertical|center_horizontal"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:textColor="#0c0c0c"
+                    android:textSize="25sp"
+                    android:maxLength="10"
+                    android:textStyle="bold"
+                    android:text = "0"
+                    android:layout_gravity="center">
+
+                    <requestFocus />
+                </TextView>
+
+
+            </LinearLayout>
+
+            <com.rey.material.widget.Button
+                android:id="@+id/amountBtPlusDialog"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:background="@drawable/plus_button1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+   <!-- <com.rey.material.widget.EditText
+        style="@style/Material.Widget.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/abc_primary_text_material_dark"
+        app:et_dividerHeight="0dp"
+        app:et_supportMode="none"
+        android:hint="Signal strength"
+        android:text="Excellent"
+        android:enabled="false"
+        android:paddingTop="8dp"/>
+
+    <com.rey.material.widget.EditText
+        style="@style/Material.Widget.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/abc_primary_text_material_dark"
+        app:et_dividerHeight="0dp"
+        app:et_supportMode="none"
+        android:hint="Security"
+        android:text="802.1x EAP"
+        android:enabled="false"
+        android:paddingTop="8dp"/>
+
+    <com.rey.material.widget.EditText
+        style="@style/Material.Widget.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:et_supportMode="charCounter"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:textColorHint="@color/abc_secondary_text_material_dark"
+        android:hint="Password"
+        android:paddingTop="8dp"
+        android:inputType="textPassword"/>
+
+    <com.rey.material.widget.CheckBox
+        style="@style/Material.Drawable.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/abc_primary_text_material_dark"
+        android:gravity="center_vertical"
+        android:paddingLeft="24dp"
+        android:layout_marginTop="8dp"/>-->
+   <!-- <com.rey.material.widget.Slider
+        style="@style/Material.Widget.Slider.Discrete"
+        android:id="@+id/slider_sl_discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="4dp"
+
+       app:sl_maxValue="10"
+        />-->
+    <com.rey.material.widget.SnackBar
+        android:id="@+id/main_sn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="bottom"
+        android:background="@color/GREEN_COLOR"
+
+
+       />
+    />
+</LinearLayout>

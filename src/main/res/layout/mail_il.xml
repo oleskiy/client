@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/emailET1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:ems="10"
+
+        android:gravity="right"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:lines="1"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="22sp"
+        android:paddingRight="3dp"
+        android:textColor="#000000"
+        android:text="Text"
+      />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mail: "
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:paddingLeft="3dp"
+        android:id="@+id/mail_title"/>
+
+</LinearLayout>

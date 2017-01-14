@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_weight="7"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#4D9CD0"
+        android:layout_weight="1"
+        android:id="@+id/login_ll">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:layout_weight="9"
+            android:gravity="center"
+            android:id="@+id/login"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pen"
+            android:layout_weight="1"
+            android:padding="3dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4975AA"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:id="@+id/how_it_workll">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:layout_weight="9"
+            android:gravity="center"
+            android:id="@+id/how_it_worktxt"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/settings"
+            android:layout_weight="1"
+            android:padding="3dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5B538A"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/locker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:layout_weight="9"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/locker"
+            android:layout_weight="1"
+
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+</LinearLayout>

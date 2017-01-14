@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_dl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/leyout_menu_left">
+      <android.support.v7.widget.Toolbar
+          android:id="@+id/main_toolbar"
+          android:layout_height="wrap_content"
+          android:layout_width="match_parent"
+          android:minHeight="?attr/actionBarSize"
+          android:background="#58416d"
+          app:theme="@style/AppBar">
+          <ImageView
+              android:layout_width="75dp"
+              android:layout_height="40dp"
+              android:src = "@drawable/button_next"
+              android:layout_gravity="right"
+              android:layout_marginRight="8dp"
+              android:layout_marginLeft="8dp"
+              android:padding="5dp"
+              android:id="@+id/next_btn_order"
+              />
+          </android.support.v7.widget.Toolbar>
+      </LinearLayout>
+      <com.rey.material.widget.TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="completed order"
+    android:gravity="center"
+    android:textSize="22sp"
+          android:id="@+id/complite"/>
+
+
+
+      <ProgressBar
+          style="@style/CustomProgressBar"
+          android:layout_width="match_parent"
+          android:layout_height="20dp"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          android:max="100"
+          android:progress="0"
+          android:id="@+id/progressBar3" />
+
+      <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/backprogress"
+    android:visibility="gone">
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/chronometer"
+        android:layout_gravity="center_horizontal" />
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bt_height"
+        android:id="@+id/progressBar"
+        android:max="20"
+        android:progress="0"
+        android:progressDrawable="@drawable/progressbar2"
+        android:layout_gravity="center_horizontal"
+        />
+    <com.rey.material.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Locker"
+        android:id="@+id/open_locker"/>
+
+
+</LinearLayout>
+
+
+
+      <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:orientation="vertical"
+       android:layout_weight="15">
+
+          <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/switch_wash">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+
+            <weartest.com.client.language.CustomViewPager
+                android:id="@+id/main_vp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linear_menu"
+               >
+
+                <com.rey.material.widget.TabPageIndicator
+                style="@style/TabPageIndicator"
+                android:id="@+id/main_tpi"
+                android:layout_height="48dp"
+                android:layout_width="0dp"
+                android:paddingLeft="60dp"
+                android:clipToPadding="false"
+                android:background="#58416d"
+                android:layout_weight="9"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <com.rey.material.widget.SnackBar
+            android:id="@+id/main_sn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:visibility="gone"
+            android:layout_gravity="bottom"/>
+
+    </FrameLayout>
+
+
+
+
+
+   </LinearLayout>
+
+<com.rey.material.widget.Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text = "Get invoice"
+    android:visibility="gone"
+    android:background="@color/colorPrimary"
+    android:textColor="#FFFFFF"
+    android:id="@+id/get_invoice"
+    android:layout_marginTop="2dp"
+
+    />
+  </LinearLayout>
+    <FrameLayout
+        android:id="@+id/main_fl_drawer"
+        android:layout_width="@dimen/drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+
+        android:paddingTop="?attr/actionBarSize"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/GREY_COLOR">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/logosmallwhite"
+    android:layout_gravity="center"/>
+            <com.rey.material.widget.ListView
+                android:id="@+id/main_lv_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:choiceMode="singleChoice"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:background="?android:attr/windowBackground"
+                android:listSelector="@android:color/transparent"/>
+        </LinearLayout>
+    </FrameLayout>
+</android.support.v4.widget.DrawerLayout>

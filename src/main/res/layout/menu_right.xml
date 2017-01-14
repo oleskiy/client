@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/main_toolbar_il"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#58416d"
+        android:gravity="end"
+
+
+
+        android:layout_below="@+id/main_fl_drawer"
+        >
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:src = "@drawable/next_btn_il"
+            android:layout_gravity="left"
+            android:layout_marginRight="8dp"
+            android:id="@+id/next_btn_main"
+            />
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>

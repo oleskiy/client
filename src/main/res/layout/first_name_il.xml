@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <EditText
+        android:id="@+id/firstNameET1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLength="42"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textSize="22sp"
+        android:paddingRight="3dp"
+        android:textColor="#000000"
+        android:text="Text il"
+        android:gravity="right"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name il: "
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:paddingLeft="3dp"
+        android:id="@+id/f_name_title"/>
+</LinearLayout>

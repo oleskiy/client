@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    >
+
+    <com.rey.material.widget.Button
+        style="@style/RaiseColorButtonRippleStyle"
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bt_height"
+        android:layout_weight="0.4"
+        android:textColor="#FFFFFFFF"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+        android:text="Profile"
+        />
+    <com.rey.material.widget.Button
+        style="@style/RaiseColorButtonRippleStyle"
+        android:id="@+id/open_hours"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bt_height"
+        android:layout_weight="0.4"
+        android:textColor="#FFFFFFFF"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+        android:text="Open houres"
+        />
+    <com.rey.material.widget.Button
+    style="@style/RaiseColorButtonRippleStyle"
+    android:id="@+id/information"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bt_height"
+    android:layout_weight="0.4"
+    android:textColor="#FFFFFFFF"
+    android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+    android:text="Information"
+    />
+    <com.rey.material.widget.Button
+        style="@style/RaiseColorButtonRippleStyle"
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bt_height"
+        android:layout_weight="0.4"
+        android:textColor="#FFFFFFFF"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+        android:text="Price"
+        />
+    <com.rey.material.widget.Button
+        style="@style/RaiseColorButtonRippleStyle"
+        android:id="@+id/our_contact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bt_height"
+        android:layout_weight="0.4"
+        android:textColor="#FFFFFFFF"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+        android:text="Contacts"
+        />
+</LinearLayout>

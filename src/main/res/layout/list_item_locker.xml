@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_light_background"
+    >
+<!--<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text = "Name Locker"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    android:id="@+id/name_item"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginBottom="3dp"
+    />-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <ImageView
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_margin="3dip"
+            android:id="@+id/logo_item"
+            
+            android:layout_gravity="center"/>
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="45dp"
+        android:src="@drawable/mao_icon"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+
+               >
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel Aviv, Arlozorov"
+                        android:id="@+id/textView3"
+                        android:textSize="17sp"
+                        android:layout_marginBottom="17dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Available lockers 0"
+                        android:id="@+id/available"
+                        android:textSize="14sp"
+                        android:gravity="bottom"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="1.5 km"
+                        android:textSize="17sp"
+                        android:id="@+id/km"
+
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Count locker"/>
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:background="@drawable/yellow_bg_color"
+                 android:layout_margin="3dp"
+
+                 android:minWidth="250dp"
+
+
+                 android:gravity="center"
+                 android:layout_gravity="center"
+                 >-->
+
+                    <!-- <LinearLayout
+                         android:id="@+id/leftTopButtonsContainer"
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:background="@drawable/yellow_bg_color"
+                         android:layout_weight="2"
+                         android:layout_gravity="center"
+                         >
+                         <com.rey.material.widget.FloatingActionButton
+                             android:id="@+id/amountBtMinus1"
+                             android:layout_width="wrap_content"
+                             android:layout_height="match_parent"
+                             app:fab_radius="15dp"
+                            android:background="@drawable/ic_minus_white_24dp"
+                            />
+                     <ImageButton
+                             android:id="@+id/amountBtMinus1"
+                             android:layout_width="44dp"
+                             android:layout_height="35dp"
+                             android:background="@drawable/black_button_selector"
+                             android:src="@drawable/minus_sign" />-->
+
+                       <!--<LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal" >
+
+                            <TextView
+                                android:id="@+id/amountView1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:singleLine="true"
+                                android:textColor="#0c0c0c"
+                                android:textSize="25sp"
+                                android:maxLength="10"
+                                android:textStyle="bold"
+                                android:text = "0"
+                                android:layout_gravity="center"
+                                >
+
+                                <requestFocus />
+                            </TextView>
+                        </LinearLayout>
+                        <com.rey.material.widget.FloatingActionButton
+                            android:id="@+id/black_button_selector"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:fab_radius="15dp"
+                            android:background="@drawable/ic_plus_white_24dp"/>
+                       <ImageButton
+                            android:id="@+id/amountBtPlus1"
+                            android:layout_width="44dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/black_button_selector"
+                            android:src="@drawable/plus_sign" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>-->
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
